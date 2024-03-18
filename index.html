@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="./css/k.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/104f4d9888.js" crossorigin="anonymous"></script>
+
+    <title>Ethan shop</title>
+
+    <!-- K is. icon -->
+    <link rel="icon" href="./images/logo-icon.png" type="icon">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <h1 class="mb-n1"><a class="navbar-brand" href="./index.php" target="_top"><img src="./images/logo-60.png"
+                        class="img-fluid" alt="KKKK"></a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav1" href="hot.php"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav2" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./classitem.php?classid=21">香氛蠟燭</a>
+                            <a class="dropdown-item" href="./classitem.php?classid=22">室內擴香</a>
+                            <a class="dropdown-item" href="./classitem.php?classid=23">蠟燭暖燈</a>
+                            <a class="dropdown-item" href="./classitem.php?classid=24">香氛噴霧</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav3" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./classitem.php?classid=25">香水</a>
+                            <a class="dropdown-item" href="./classitem.php?classid=26">身體保養</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav4" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./classitem.php?classid=111">家飾品</a>
+                            <a class="dropdown-item" href="./classitem.php?classid=112">收納用品</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav5" href="#"></a>
+                    </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <li>
+                            <form name="search" id="search" action="classitem.php" method="get">
+                                <div class="input-group">
+                                    <input type="text" name="search_name" id="search_name" class="form-control search"
+                                        placeholder="Search..." value="" required>
+                                    <span class="input-group-bnt"><button class="btn btn-default" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button></span>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-comment fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.php">
+                                <i class="fa-regular fa-user fa-lg"></i>
+                                </a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.php">
+                                <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                                <span class=" badge badge-dark">6</span>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="row w-75 mx-auto">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="classitem.php?classid=1&level=1"><img src="./images/banner1.jpg"
+                                    class="d-block w-100" alt="居家放鬆香氛提案"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>居家放鬆香氛提案</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <a href="classitem.php?classid=1&level=1"><img src="./images/banner2.jpg"
+                                    class="d-block w-100" alt="適合不同氛圍的香氛"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>適合不同氛圍的香氛</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <a href="classitem.php?classid=1&level=1"><img src="./images/banner3.jpg"
+                                    class="d-block w-100" alt="全新居家香氛體驗"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>全新居家香氛體驗</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="container">
+            <div class="row justify-content-md-center mt-5 mb-3">
+                <div class="col-sm-4 text-center">
+                    <h2 class="fz-3 fw-6">NEWS<span class="pl-3 pr-3">|</span>最新消息</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row text-center mt-3">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="./images/newProduction1-500x500.jpg" class="card-img-top" alt="新品上市">
+                            <div class="card-body">
+                                <p class="card-text fz-1 mt-n1">2022-05-16</p>
+                                <p class="card-text fz-2 mt-n3">新品上市</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="./images/mothersDay1-500x500.jpg" class="card-img-top" alt="母親節獻禮">
+                            <div class="card-body">
+                                <p class="card-text fz-1 mt-n1">2022-05-05</p>
+                                <p class="card-text fz-2 mt-n3">母親節獻禮</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="./images/newsSample-500x500.jpg" class="card-img-top" alt="連假出貨公告">
+                            <div class="card-body">
+                                <p class="card-text fz-1 mt-n1">2022-04-28</p>
+                                <p class="card-text fz-2 mt-n3">連假出貨公告</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="./images/opening.jpg" class="card-img-top" alt="品牌開幕慶">
+                            <div class="card-body">
+                                <p class="card-text fz-1 mt-n1">2022-01-28</p>
+                                <p class="card-text fz-2 mt-n3">品牌開幕慶</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brandImage">
+        <div class="container">
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-sm-8">
+                    <div class="card">
+                        <img src="./images/brandImage.jpg" class="card-img-top" alt="brandImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="production" id="production">
+        <div class="container">
+            <div class="row justify-content-md-center mt-5">
+                <div class="col-sm-4 text-center">
+                    <h2 class="fz-3 fw-6">BEST SELLERS<span class="pl-3 pr-3">|</span>熱銷商品</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=1"><img src="./images/candleCube-500x500.jpg" class="card-img-top"
+                                alt="HOT1" title="方塊造型蠟燭"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=1">
+                                <h3 class="card-title fz-2 mt-n3">方塊造型蠟燭</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$850</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(1)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=2"><img src="./images/newProduction2-500x500.jpg" class="card-img-top"
+                                alt="HOT2" title="愉浪系列 身體乳"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=2">
+                                <h3 class="card-title fz-2 mt-n3">愉浪系列 身體乳</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$580</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(2)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=3"><img src="./images/essentialOil-500x500.jpg" class="card-img-top"
+                                alt="HOT3" title="綠茶舒緩精油"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=3">
+                                <h3 class="card-title fz-2 mt-n3">綠茶舒緩精油</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$880</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(3)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=4"><img src="./images/set1-500x500.jpg" class="card-img-top" alt="HOT4"
+                                title="經典香氛組"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=4">
+                                <h3 class="card-title fz-2 mt-n3">經典香氛組</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$3880</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(4)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=5"><img src="./images/5-500x500.jpg" class="card-img-top" alt="HOT5"
+                                title="精華液"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=5">
+                                <h3 class="card-title fz-2 mt-n3">精華液</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$1080</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(5)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=6"><img src="./images/6-500x500.jpg" class="card-img-top" alt="HOT6"
+                                title="保濕精華"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=6">
+                                <h3 class="card-title fz-2 mt-n3">保濕精華</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$1080</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(6)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=7"><img src="./images/7-500x500.jpg" class="card-img-top" alt="HOT7"
+                                title="木質擺盤"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=7">
+                                <h3 class="card-title fz-2 mt-n3">木質擺盤</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$580</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(7)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-3 mb-3">
+                    <div class="card border-0">
+                        <a href="goods.php?p_id=8"><img src="./images/8-500x500.jpg" class="card-img-top" alt="HOT8"
+                                title="基本保養套組"></a>
+                        <div class="card-body">
+                            <a href="goods.php?p_id=8">
+                                <h3 class="card-title fz-2 mt-n3">基本保養套組</h3>
+                            </a>
+                            <p class="card-text fz-1 mt-n2">NT$2580</p>
+                            <button type="button" id="button01" name="button01" class="btn btn-main fz-1 mt-n2"
+                                onclick="addcart(8)">加入購物車</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                    <li class='page-item disabled'><span class='page-link' aria-label='Previous'
+                            aria-hidden='true'>&laquo;</span></li>
+                    <li class='page-item active' aria-current='page'><span class='page-link'>1</span></li>
+                    <li class='page-item'><a class='page-link' href="/s1090413/index.php?pageNum_rs=1.#production">2</a>
+                    </li>
+                    <li class='page-item'><a class='page-link' href="/s1090413/index.php?pageNum_rs=1.#production"
+                            aria-label='Next'><span aria-hidden='true'>&raquo;</span></a></li> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <hr class="mt-5">
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row text-center mx-auto">
+                <div class="col-sm-4">
+                    <img src="./images/logo.png" alt="" style="width: 100px;" class="mt-n3">
+                    <p class="fz-1 mt-n2">網站僅為個人作品，不做任何商業用途</p>
+                    <p class="fz-1 mt-n2">copyright © 2022 K is.</p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="fz-1">ABOUT US<span class="pl-3 pr-3">|</span>認識我們</p>
+                    <hr class="mt-n2">
+                    <ul>
+                        <li><a href="#" class="fz-1">最新消息</a></li>
+                        <li><a href="#" class="fz-1">關於我們</a></li>
+                        <li><a href="#" class="fz-1">隱私權政策</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <p class="fz-1">POLICY<span class="pl-3 pr-3">|</span>顧客服務</p>
+                    <hr class="mt-n2">
+                    <ul>
+                        <li><a href="#" class="fz-1">運送說明</a></li>
+                        <li><a href="#" class="fz-1">付款說明</a></li>
+                        <li><a href="#" class="fz-1">退換貨政策</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 text-left">
+                    <p class="fz-1 pl-3">CONTACT US<span class="pl-3 pr-3">|</span>聯絡我們</p>
+                    <hr class="mt-n2">
+                    <ul class="pl-3">
+                        <li class="fz-1 mt-2">客服時間 / 平日 10 AM ~ 6 PM (國定例假日除外)</li>
+                        <li class="fz-1 mt-2">客服信箱 / kis.service97@gmail.com</li>
+                        <li class="fz-1 mt-2">客服電話 / 0912-345678</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & jQuery JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/gotop.js"></script>
+    <script src="./js/jslib.js"></script>
+
+</body>
+
+</html>
